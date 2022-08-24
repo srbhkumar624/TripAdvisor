@@ -2,9 +2,10 @@ import React from 'react'
 import { Box,Button,Flex,Spacer,Img,Input,Text} from '@chakra-ui/react'
 import Navbar from '../Components/Navbar'
 import Navbar2 from '../Components/Navbar2'
-
+import Patna from '../Components/Swipper/Patna'
 const Home = () => {
   return (
+
     <div>
         <div>
         <Box
@@ -14,7 +15,7 @@ const Home = () => {
   backgroundPosition="center"
   backgroundRepeat="no-repeat"
 >
-<Text fontSize='30px' color='white'>
+<Text fontWeight="bold" fontSize='30px' color='white'>
   Explore action-packed<br/>
   Abu Dhabi
   <Text fontSize="20px">From skydiving to car racing,so much awaits</Text>
@@ -37,28 +38,45 @@ const Home = () => {
     //   display="block"
     
     > 
-    <Input width="70%" marginLeft="150px"  marginTop="200px"  variant='outline' placeholder='Outline' />
+    <Input width="70%" marginLeft="150px" bg="white "   marginTop="200px"  variant='outline' placeholder='Outline' />
 
     </Box>
-    
-    
+    <Patna/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     <div>
-    <Box height="180px"  bgColor="#FAF1ED">
-    <Flex>
+    <Box  height="180px"  bgColor="#FAF1ED">
+    <Flex >
         <Text fontSize="30px" fontWeight="bold"marginTop="50px" marginLeft="10px" >Get Out There
         <Text fontSize="15px" fontWeight="normal">Best of The Best tours,attractions & activities you won't want to miss</Text>
         <Button bgColor="black" color="white" borderRadius="25px">See The List</Button>
         </Text>
         <Spacer/>
-        <Img height="180px" width="400px" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/f7/1d/4d/caption.jpg?w=1000&h=-1&s=1">
-        
-        </Img>
-        {/* <Img src='https://static.tacdn.com/img2/fallback_ads/tc-badge.png'>
-        </Img> */}
+        <Box bgImage="url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/f7/1d/4d/caption.jpg?w=1000&h=-1&s=1')"
+        height="180px"
+        width="400px"
+        bgPos="center">
+            <Img marginLeft="250px" marginTop="30px"  height="150px" src='https://static.tacdn.com/img2/fallback_ads/tc-badge.png'/>
+
+        </Box>
         
     </Flex>
     </Box>
     </div> 
+</Box>
+<Box height="450px"  bgColor="#004F32">
+    <Flex>
+        <Img marginLeft="250px" marginTop="100px" height="100px" src='https://static.tacdn.com/img2/travelers_choice/TC_logomark_solid_cream.svg'/>
+        <Text textAlign="center" marginLeft="-180px" marginTop="220px" fontSize="30px" fontWeight="bold" color="white">Travellers'<br/> Choice Best of<br/> the Best</Text>
+        <Button bgColor="black" color="white" borderRadius="25px" marginLeft="-180px" marginTop="360px">See the winners</Button>
+        <Spacer/>
+<Img  height="450px" src='https://www.linkpicture.com/q/Screenshot-691.png'/>
+        
+
+    </Flex>
+
 </Box>
 
     </div>

@@ -53,4 +53,4 @@ export default [
         title:"Buddhist Pilgrimage Tour",
         price:"from ₹88,864 per adult"
     }
-]
+];
