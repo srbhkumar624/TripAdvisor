@@ -3,14 +3,12 @@ import { Flex, Spacer} from '@chakra-ui/react'
 import{VscBell} from "react-icons/vsc"
 import {BsHeart}from "react-icons/bs"
 import {ImPencil} from "react-icons/im"
-import{Navigate} from "react-router-dom"
+import{ Link} from "react-router-dom"
 import React from 'react'
 
 
 const Navbar = () => { 
-    const handleLogin=()=>{
-        <Navigate to="/login"></Navigate>
-    }
+    
   return (
     <div>
         <div>
@@ -35,11 +33,13 @@ const Navbar = () => {
               borderRadius="25px"
              fontSize="20px"
              fontWeight="semibold"><VscBell/> Alerts </Button>
+            <Link to={"/login"}>
             <Button 
             bgColor="black" color="white"
             borderRadius="25px"
              fontSize="20px"
-             fontWeight="semibold" onClick={handleLogin()}>Sign in</Button>
+             fontWeight="semibold" >Sign in</Button>
+            </Link>
         </Flex>
         </div>
     </div>
