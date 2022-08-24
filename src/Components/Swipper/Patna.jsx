@@ -32,8 +32,8 @@ export default function Patna() {
 
       <div style={{ width: "90%",margin:"auto" }}>
         <Swiper
-          slidesPerView={4}
-          spaceBetween={6}
+          slidesPerView={3}
+          spaceBetween={10}
           centeredSlides={true}
           // autoplay={{
           //   delay: 2500,
