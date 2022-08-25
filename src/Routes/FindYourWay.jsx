@@ -1,6 +1,7 @@
 import { Box, Button,  Grid, GridItem, Heading, Img, Text } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Discover from '../Components/Discover'
 import Navbar from '../Components/Navbar'
 import Navbar2 from '../Components/Navbar2'
 import Sponsored from '../Components/Sponsored'
@@ -68,9 +69,8 @@ const FindYourWay = () => {
         <Stay/>
         <Eat/>
         {/* </Box> */}
-        
-
       </Box>
+      <Discover/>
     </div>
   )
 }
