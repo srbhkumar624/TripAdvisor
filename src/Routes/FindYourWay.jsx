@@ -3,6 +3,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../Components/Navbar'
 import Navbar2 from '../Components/Navbar2'
+import Sponsored from '../Components/Sponsored'
+import Do from '../Components/Swipper/Do'
+import Eat from '../Components/Swipper/Eat'
+import Stay from '../Components/Swipper/Stay'
 
 const FindYourWay = () => {
   return (
@@ -47,10 +51,25 @@ const FindYourWay = () => {
           
         </Box>
           <Heading marginTop={"20px"} fontWeight={"bold"}>About Abu Dhabi</Heading>
-          <Text fontSize={"20px"} fontWeight={"normal"} width={"50%"}>
+          <Text fontSize={"20px"} fontWeight={"normal"} width={"50%"} lineHeight="1.2">
           Atmospheric backstreets paint a very different picture to first impressions of Abu Dhabi. The often slick and modern capital of the U.A.E. presents a fascinating mixture of tradition and progression. Tracing its rich history back to around 3000 B.C., Abu Dhabi maintains a more distinctly Arabian ambiance than glitzy Dubai. Taxis are a safe, reliable way to get around sites such as The Corniche Park, the White Fort, the Heritage Village, which offers glimpses into Bedouin life, and the Women's Craft Centre.
           </Text>
+      </Box>
+      <br/>
+      <br/>
+      <br/>
+      <Sponsored/>
+      <Box width="80%" margin="auto">
+      <br/>
+      <br/>
+      <br/>
+        <Do/>
+        {/* <Box marginTop="130px"> */}
+        <Stay/>
+        <Eat/>
+        {/* </Box> */}
         
+
       </Box>
     </div>
   )
