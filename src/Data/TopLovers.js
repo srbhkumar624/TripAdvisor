@@ -29,25 +29,25 @@ export default [
         image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/65/5f/4b/caption.jpg?w=300&h=300&s=1&cx=1321&cy=849&chk=v1_14f7826859b4f964e5b2",
         text:"Dominicane Republic"
     },
-    {
-        id:7,
-        image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/bf/69/b0/caption.jpg?w=300&h=300&s=1",
-        text:"Myrtle Beach Sc"
-    },
-    {
-        id:8,
-        image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4b/5e/c2/caption.jpg?w=300&h=300&s=1",
-        text:"Bali, Indonesia"
-    },
-    {
-        id:9,
-        image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/bf/72/8e/caption.jpg?w=300&h=300&s=1",
-        text:"Cabo san Lucas, Mexico"
-    },
-    {
-        id:10,
-        image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/48/36/4f/caption.jpg?w=300&h=300&s=1",
-        text:"Aruba"
-    }
+    // {
+    //     id:7,
+    //     image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/bf/69/b0/caption.jpg?w=300&h=300&s=1",
+    //     text:"Myrtle Beach Sc"
+    // },
+    // {
+    //     id:8,
+    //     image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4b/5e/c2/caption.jpg?w=300&h=300&s=1",
+    //     text:"Bali, Indonesia"
+    // },
+    // {
+    //     id:9,
+    //     image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/bf/72/8e/caption.jpg?w=300&h=300&s=1",
+    //     text:"Cabo san Lucas, Mexico"
+    // },
+    // {
+    //     id:10,
+    //     image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/48/36/4f/caption.jpg?w=300&h=300&s=1",
+    //     text:"Aruba"
+    // }
 
 ]

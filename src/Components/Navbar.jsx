@@ -21,23 +21,23 @@ const Navbar = () => {
             <Button 
              bgColor="white"
              borderRadius="25px"
-             fontSize="20px"
+             fontSize="17px"
              fontWeight="semibold"><ImPencil/>Review</Button>
             <Button
              bgColor="white"
              borderRadius="25px"
-             fontSize="20px"
+             fontSize="17px"
              fontWeight="semibold"><BsHeart/>Trips</Button>
             <Button
               bgColor="white"
               borderRadius="25px"
-             fontSize="20px"
+             fontSize="17px"
              fontWeight="semibold"><VscBell/> Alerts </Button>
             <Link to={"/login"}>
             <Button 
             bgColor="black" color="white"
             borderRadius="25px"
-             fontSize="20px"
+             fontSize="17px"
              fontWeight="semibold" >Sign in</Button>
             </Link>
         </Flex>

@@ -1,14 +1,16 @@
 import { useContext, useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AppContext } from "../ContextApi/AppContext";
+import { Box,  Input, Text } from "@chakra-ui/react";
+import Navbar from "../Components/Navbar";
 
 export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const { auth, userLogin } = useContext(AppContext);
+  const { userLogin } = useContext(AppContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -30,8 +32,14 @@ export const Login = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input
+      <br/>
+      <br/>
+      <Navbar/>
+      <Text fontWeight={"bold"} fontSize="large" marginLeft={"550px" } marginTop="-100px">SignIn</Text>
+      <Box  marginLeft={"550px"}>
+      <form  onSubmit={handleSubmit}>
+        <Input isInvalid
+    errorBorderColor='red.300' size="lg" width="450px"
           type="text"
           placeholder="Email"
           value={email}
@@ -39,15 +47,20 @@ export const Login = () => {
         />
         <br />
         <br />
-        <input
+        <Input isInvalid
+    errorBorderColor='red.300' size="lg" width="450px"
           type="text"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
         <br />
-        <input type="submit" />
+        <Input isInvalid
+    errorBorderColor='black' size="lg" width="450px" type="submit" />
       </form>
+      <Link  to="/">Go Back</Link>
+      </Box>
+      
     </div>
   );
 };
