@@ -1,17 +1,17 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
-import "./Patna.css";
-import slideData from '../../Data/Patna'
+import "./TopDes.css";
+import slideData from '../../Data/TopLovers'
 
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/core";
-import { Box, Img, Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 
 
-export default function Patna() {
+export default function TopDes() {
   return (
     <Box
     className="main"
@@ -24,15 +24,15 @@ export default function Patna() {
     >
       <Box>
         <Text fontSize="25px" fontWeight={"bold"} >
-          Ways To Tour Patna
+        Top destinations for beach lovers
           
         </Text>
-        <p>Book these experiences for a close-up look at Patna.</p>
+        <p>Recommended based on your activity</p>
       </Box>
 
       <div style={{ width: "100%",margin:"auto" }}>
         <Swiper
-          slidesPerView={3}
+          slidesPerView={4}
           spaceBetween={10}
           centeredSlides={true}
           // autoplay={{
@@ -49,10 +49,11 @@ export default function Patna() {
           {slideData.map((e) => (
             <SwiperSlide key={e.id}>
               <div>
-              <Img height="250px" width={"250px"} src={e.image} alt="patna avatar" />
-              <Text fontWeight={"extrabold"}>{e.title}</Text>
-              <Text fontWeight={"extrabold"}>{e.price}</Text>
+              <img src={e.image} alt="TopdesAvatar" />
+            <Text fontWeight={"extrabold"} textAlign={"center"} fontSize={"large"}>{e.text}</Text>  
               </div>
+              
+
             </SwiperSlide>
           ))}
         </Swiper>

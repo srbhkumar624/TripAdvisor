@@ -5,12 +5,13 @@ import Navbar2 from "../Components/Navbar2";
 // import {BsSearch} from "react-icons/bs"
 import Patna from "../Components/Swipper/Patna";
 import { Link } from "react-router-dom";
+import TopDes from "../Components/Swipper/TopDes";
 const Home = () => {
   return (
     <div>
       <div>
         <Box
-          bgImage="url('https://wallpaperaccess.com/full/2248320.jpg')"
+          bgImage="url('https://resources.teletextholidays.co.uk/drupal/images/homepage/4.jpg')"
           height="200px"
           bgSize="100%"
           backgroundPosition="center"
@@ -54,11 +55,17 @@ const Home = () => {
             </Input>
           
         </Box>
+        <br/>
+      <br/>
+      <br/>
         <Patna />
         <br />
         <br />
         <br />
         <br />
+        <br/>
+      <br/>
+      <br/>
         <div>
           <Box height="180px" bgColor="#FAF1ED">
             <Flex>
@@ -94,7 +101,15 @@ const Home = () => {
             </Flex>
           </Box>
         </div>
+        <br/>
+      <br/>
+        <TopDes/>
       </Box>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+     
       <Box height="450px" bgColor="#004F32">
         <Flex>
           <Img
