@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AppContext } from "../ContextApi/AppContext";
 import { Box,  Input, Text } from "@chakra-ui/react";
 import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 export const Login = () => {
   const [email, setEmail] = useState("");
@@ -60,6 +61,7 @@ export const Login = () => {
       </form>
       <Link  to="/">Go Back</Link>
       </Box>
+      <Footer/>
       
     </div>
   );
