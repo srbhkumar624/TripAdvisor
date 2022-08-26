@@ -6,9 +6,13 @@ import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 import Navbar2 from '../Components/Navbar2'
 import Sponsored from '../Components/Sponsored'
+import ASafari from '../Components/Swipper/ASafari'
+import AWD from '../Components/Swipper/AWD'
 import Do from '../Components/Swipper/Do'
 import Eat from '../Components/Swipper/Eat'
 import Stay from '../Components/Swipper/Stay'
+import Trips from '../Components/Swipper/Trips'
+import Trending from '../Components/Trending'
 
 const FindYourWay = () => {
   return (
@@ -72,6 +76,21 @@ const FindYourWay = () => {
         {/* </Box> */}
       </Box>
       <Discover/>
+      <Trending/>
+      <Box width={"80%"} margin="auto">
+      <ASafari/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <AWD/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <Trips/>
+      </Box>
+      
       <br/>
       <br/>
       <br/>
