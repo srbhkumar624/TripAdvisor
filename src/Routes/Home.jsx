@@ -6,6 +6,8 @@ import Navbar2 from "../Components/Navbar2";
 import Patna from "../Components/Swipper/Patna";
 import { Link } from "react-router-dom";
 import TopDes from "../Components/Swipper/TopDes";
+import Footer from "../Components/Footer";
+// import PrivateRoute from "../Components/PrivateRoute";
 const Home = () => {
   return (
     <div>
@@ -58,7 +60,7 @@ const Home = () => {
         <br/>
       <br/>
       <br/>
-        <Patna />
+      <Patna /> 
         <br />
         <br />
         <br />
@@ -146,6 +148,10 @@ const Home = () => {
           />
         </Flex>
       </Box>
+      <br/>
+      <br/>
+      <br/>
+      <Footer/>
     </div>
   );
 };
